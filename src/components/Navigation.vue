@@ -12,7 +12,7 @@
         </div>
         <div class="flex md:items-center md:block md:ml-10 md:pr-4 md:space-x-8">              
           <router-link to="/" class="font-medium text-gray-500 hover:text-gray-900">Home</router-link>
-          <router-link to="/about" class="font-medium text-gray-500 hover:text-gray-900">Listing</router-link>
+          <router-link to="/listing" class="font-medium text-gray-500 hover:text-gray-900">Listing</router-link>
         </div>
       </nav>
     </div>
