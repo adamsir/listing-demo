@@ -17,7 +17,7 @@
   </Dialog>
 </template>
 
-<script lang="ts">
+<script>
   import { defineAsyncComponent } from 'vue'
 
   export default {
@@ -42,7 +42,7 @@
         return arg.substr(0, 2).toUpperCase()
       },
       showDialog(arg) {
-        this.detailVisible = arg
+        this.detailVisible = arg;
       }
     }
   }

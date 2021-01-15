@@ -7,11 +7,11 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
   const normalizeData = (obj) => {
     let arr = []
 
-    Object.entries  (obj).map((item) => {
+    Object.entries(obj).map((item) => {
       arr.push({
         key: item[0],
         value: item[1]
@@ -32,9 +32,6 @@
         type: Object,
         default: {}
       }
-    },
-    methods: {
-
     },
     beforeMount() {
       this.items = normalizeData(this.payload)
