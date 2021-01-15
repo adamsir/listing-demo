@@ -1,10 +1,22 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <navigation/>
   <router-view/>
 </template>
+
+<script>
+import fetch from 'unfetch'
+import Navigation from '@/components/Navigation'
+
+fetch('https://swapi.dev/api/people/')
+  .then( r => r.json() )
+  .then( data => console.log(data) )
+
+export default {
+  components: {
+    Navigation
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
