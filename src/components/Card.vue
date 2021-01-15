@@ -6,7 +6,7 @@
         <p class="text-lg text-black font-semibold" v-text="payload.name"></p>
         <p class="text-gray-500 font-medium" v-text="payload.gender"></p>
       </div>
-      <button @click="showDialog" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">View raw</button>
+      <button @click="showDialog(true)" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">View raw</button>
     </div>
   </div>
   <Dialog 
@@ -41,8 +41,8 @@
       getInitials(arg) {
         return arg.substr(0, 2).toUpperCase()
       },
-      showDialog() {
-        this.detailVisible = true
+      showDialog(arg) {
+        this.detailVisible = arg
       }
     }
   }

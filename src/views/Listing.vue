@@ -49,7 +49,6 @@ export default defineComponent({
       const data = await response.json()
       this.listing = data?.results
       this.loading = false
-      console.log(Date.now())
     }
   },
   async created() {

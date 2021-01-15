@@ -53,7 +53,7 @@ export default {
   methods: {
     setVisible(arg) {
       this.show = arg
-      this.$emit('visibility', this.show);
+      this.$emit('visibility', arg);
     }
   }
 }
